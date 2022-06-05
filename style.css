@@ -70,7 +70,7 @@ p {
 
 .topbar-nav {
     z-index: 3;
-    background-color: #141414;
+    background-color: #000000;
     position: fixed;
     width: 100%;
     padding: 15px 0;
@@ -247,12 +247,12 @@ p {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    text-align: justify;
 
 }
 
 .aboutme-img img {
-    width: 80%;
-    margin: 20px;
+    width: 100%;
     border-radius: 10px;
     transition: 0.2s ease-in transform;
     
@@ -402,7 +402,7 @@ p {
     display: flex;
     overflow: hidden;
     padding: 20px;
-    width: 68%;
+    width: 80%;
     margin-bottom: 20px;
     border-radius: 10px;
 }
