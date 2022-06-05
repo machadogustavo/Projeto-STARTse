@@ -392,21 +392,25 @@ p {
 
 .skills {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    width: 100%;
 }
 
 .max-width-skill {
+    height: 20%;
     display: flex;
     overflow: hidden;
     padding: 20px;
     width: 80%;
     margin-bottom: 20px;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px auto;
 }
 
 /*Definindo Borda Diferente para cada card de imagem*/
@@ -670,6 +674,29 @@ form h5 {
         color: #d1d1d1;
         font-size: 3rem;
         font-weight: 200;
+    }
+
+    .aboutme-info {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        padding: 30px;
+        border-radius: 10px;
+        background-image: linear-gradient(135deg, #e4e4e4 0%, #c0c0c0 100%);
+        color: #1b1b1b;
+        overflow: hidden;
+    }
+
+    .aboutme-texts{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+        text-align: justify;
+    
     }
 
 
