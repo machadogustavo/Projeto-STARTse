@@ -404,7 +404,13 @@ p {
     padding: 30px;
 }
 
+
+.skill-img:hover {
+    transform: scale(1.1);
+}
+
 .skill-img img{
+    transition: 0.2s ease-in transform;
     width: 100%;
 }
 
