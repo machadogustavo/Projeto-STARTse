@@ -436,8 +436,15 @@ p {
 /* Botão voltar ao topo*/
 
 #back-to-top{
-    display: block;
-    width: 10%;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: left;
+    
+}
+
+#back-to-top img {
+    width: 50%;
 }
 
 /* Seção Contact Us*/
