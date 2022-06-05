@@ -626,24 +626,19 @@ form h5 {
     }
 
     .max-width {
-        max-height: 1200px;
-        flex-direction: column;
-        padding: 0 80px;
-        margin: auto;
+        margin: 50px;
     }
     
     .topbar-nav .logo-nav a {
-        color: #F3F3F3;
-        font-size: 1rem;
-        font-weight: 300;
-        text-decoration: none;
+        content: '';
+        color: transparent;        
     }
 
     .topbar-nav .menu li a {
+        margin: 0 auto;
         color: #d1d1d1;
-        font-size: 2rem;
-        font-weight: 200;
-        margin-left: 25px;     
+        font-size: 3rem;
+        font-weight: 200;    
     }
 
 
