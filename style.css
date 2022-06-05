@@ -1,12 +1,13 @@
 /*Importação da Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
 
+/*Zerando espaçamento CSS nativo do HTML*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Estilização Base*/
 html {
     font-size: 8px;
     font-family: 'Poppins', monospace;
@@ -14,35 +15,9 @@ html {
     scroll-behavior: smooth;
 }
 
+/*Removendo Cor dos hyperlinks*/
 a {
     text-decoration: none;
-}
-
-.container {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-title {
-    font-size: 5rem;
-    font-weight: 400;
-    color: #141414;
-    text-decoration: underline;
-}
-
-.section-title2 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: #141414;
-    letter-spacing: 0.2rem;
-    border-radius: 10px;
-    color: #F1F1F1;
 }
 
 img {
@@ -59,8 +34,38 @@ p {
     letter-spacing: 0.05rem;
 }
 
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* Seção Top-BarNavr*/
+/*Título*/
+.section-title {
+    font-size: 5rem;
+    font-weight: 400;
+    color: #141414;
+    text-decoration: underline;
+}
+
+/*SubTítulo*/
+.section-title2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #141414;
+    letter-spacing: 0.2rem;
+    border-radius: 10px;
+    color: #F1F1F1;
+}
+
+
+
+/* Seção Barra de Navegação Top*/
 
 .topbar-nav {
     z-index: 3;
@@ -101,6 +106,14 @@ p {
     font-size: 2rem;
     font-weight: 200;
     margin-left: 25px;
+    transition: 0.2s ease transform;
+}
+
+.topbar-nav .menu a:hover {
+    color: #d1d1d1;
+    font-weight: 400;
+    margin-left: 25px;
+    text-decoration: underline;
 }
 
 /*Seção de Apresentação*/
@@ -232,6 +245,15 @@ p {
 #idade,
 #uf {
     font-size: 3rem;
+}
+
+.aboutme-info img:hover {
+    transform: scale(1.1);
+}
+
+.aboutme-info img {
+    transition: 0.2s ease-in transform;
+    width: 100%;
 }
 
 /* Seção Portfólio */
@@ -379,6 +401,7 @@ p {
 
 }
 
+/*Definindo Borda Diferente para cada card de imagem*/
 #html {
     border: 10px solid #E54C21;
 }
@@ -405,11 +428,11 @@ p {
 }
 
 
-.skill-img:hover {
+.skill-img img:hover {
     transform: scale(1.1);
 }
 
-.skill-img img{
+.skill-img img {
     transition: 0.2s ease-in transform;
     width: 100%;
 }
@@ -441,16 +464,21 @@ p {
 
 /* Botão voltar ao topo*/
 
-#back-to-top{
+#back-to-top {
     display: flex;
     width: 100%;
     margin: 0 auto;
     justify-content: left;
-    
+
+}
+
+#back-to-top img:hover{
+    transform: rotateY(35deg);
 }
 
 #back-to-top img {
     width: 50%;
+    transition: 1s ease tranform;
 }
 
 /* Seção Contact Us*/
@@ -474,8 +502,6 @@ form {
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 100px;
-
-
 }
 
 form>div {
@@ -590,25 +616,7 @@ form h5 {
     }
 }
 
-/* Media Query */
-
-/*
-@media only screen and (min-width: 768px) {
-    #portfolio .project-item {
-        flex-direction: row;
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-    #portfolio .all-projects .project-info{
-        height: 100%;
-    }
-    #portfolio .project-item:nth-child(even){
-        flex-direction: row-reverse;
-    }
-}
-*/
+/*Media Querys*/
 
 @media only screen and (max-width: 1200px) {
     .max-width-skill {
@@ -642,17 +650,17 @@ form h5 {
         margin: 50px;
         height: 20px;
     }
-    
+
     .topbar-nav .logo-nav a {
         content: '';
-        color: transparent;        
+        color: transparent;
     }
 
     .topbar-nav .menu li a {
         margin: 50px auto;
         color: #d1d1d1;
         font-size: 3rem;
-        font-weight: 200;    
+        font-weight: 200;
     }
 
 
