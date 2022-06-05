@@ -634,6 +634,7 @@ form h5 {
 
     .max-width {
         margin: 50px;
+        height: 20px;
     }
     
     .topbar-nav .logo-nav a {
@@ -642,7 +643,7 @@ form h5 {
     }
 
     .topbar-nav .menu li a {
-        margin: 0 auto;
+        margin: 50px auto;
         color: #d1d1d1;
         font-size: 3rem;
         font-weight: 200;    
