@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /*Estilização Base*/
 html {
     font-size: 8px;
@@ -215,10 +216,10 @@ p {
 }
 
 .aboutme-info {
-    width: 80%;
     display: flex;
-    align-items: left;
-    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    flex-direction: row;
     margin: 0 auto;
     margin-bottom: 70px;
     padding: 30px;
@@ -226,11 +227,6 @@ p {
     background-image: linear-gradient(135deg, #e4e4e4 0%, #c0c0c0 100%);
     color: #1b1b1b;
     overflow: hidden;
-}
-
-#img-profie {
-    border-radius: 10px;
-    width: 20%;
 }
 
 #bio {
@@ -247,14 +243,25 @@ p {
     font-size: 3rem;
 }
 
-.aboutme-info img:hover {
+.aboutme-texts{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.aboutme-img img {
+    width: 80%;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.2s ease-in transform;
+    
+}
+.aboutme-img img:hover {
     transform: scale(1.1);
 }
 
-.aboutme-info img {
-    transition: 0.2s ease-in transform;
-    width: 100%;
-}
+
 
 /* Seção Portfólio */
 
@@ -385,20 +392,19 @@ p {
 
 .skills {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
 .max-width-skill {
+    display: flex;
     overflow: hidden;
     padding: 20px;
-    width: 60%;
-    display: flex;
-    margin: 0 auto;
+    width: 68%;
     margin-bottom: 20px;
     border-radius: 10px;
-
 }
 
 /*Definindo Borda Diferente para cada card de imagem*/
@@ -414,13 +420,6 @@ p {
     border: 10px solid #F1C026;
 }
 
-.skill-item {
-    overflow: hidden;
-    width: 80%;
-    border: 10px solid #e4e4e4;
-    border-radius: 10px;
-}
-
 .skill-img {
     width: 100%;
     display: flex;
@@ -433,18 +432,23 @@ p {
 }
 
 .skill-img img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: 0.2s ease-in transform;
     width: 100%;
 }
 
 .skill-info {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     background-image: linear-gradient(135deg, #e4e4e4 0%, #c0c0c0 100%);
     color: #1b1b1b;
     padding: 60px;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+    align-items: left;
+    text-align: justify;
 }
 
 .skill-info h1 {
@@ -467,12 +471,11 @@ p {
 #back-to-top {
     display: flex;
     width: 100%;
-    margin: 0 auto;
-    justify-content: left;
-
+    justify-content: flex-end;
+    
 }
 
-#back-to-top img:hover{
+#back-to-top img:hover {
     transform: rotateY(35deg);
 }
 
@@ -649,15 +652,19 @@ form h5 {
     .max-width {
         margin: 50px;
         height: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .topbar-nav .logo-nav a {
         content: '';
         color: transparent;
+        
     }
 
     .topbar-nav .menu li a {
         margin: 50px auto;
+        
         color: #d1d1d1;
         font-size: 3rem;
         font-weight: 200;
