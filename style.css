@@ -639,6 +639,13 @@ form h5 {
         text-decoration: none;
     }
 
+    .topbar-nav .menu li a {
+        color: #d1d1d1;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-left: 25px;
+    }
+
 
 
 }
