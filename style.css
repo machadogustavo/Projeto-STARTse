@@ -655,17 +655,24 @@ form h5 {
         font-size: 2rem;
 
     }
-
+    .topbar-nav {
+        z-index: 3;
+        background-color: #000000;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+    
+    }
     .max-width {
         display: flex;
         flex-direction: column;
-        margin: 50px;
         align-items: center;
+        justify-content: center;
     }
 
     .topbar-nav .logo-nav a {
         content: '';
-        color: transparent;
+        color: #d1d1d1;
 
     }
 
@@ -674,7 +681,7 @@ form h5 {
         flex-direction: column;
         color: #d1d1d1;
         font-size: 3rem;
-        font-weight: 200;
+        font-weight: 400;
     }
 
     .aboutme-info {
@@ -699,14 +706,7 @@ form h5 {
         text-align: justify;
 
     }
-    .topbar-nav {
-        z-index: 3;
-        background-color: #000000;
-        position: relative;
-        width: 100%;
-        padding: 20px;
     
-    }
     
 
 
