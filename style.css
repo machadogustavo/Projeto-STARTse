@@ -681,7 +681,9 @@ form h5 {
         flex-direction: column;
         color: #d1d1d1;
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 200;
+        text-decoration: underline;
+        text-align: center;
     }
 
     .aboutme-info {
