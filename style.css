@@ -243,7 +243,7 @@ p {
     font-size: 3rem;
 }
 
-.aboutme-texts{
+.aboutme-texts {
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -255,8 +255,9 @@ p {
     width: 100%;
     border-radius: 10px;
     transition: 0.2s ease-in transform;
-    
+
 }
+
 .aboutme-img img:hover {
     transform: scale(1.1);
 }
@@ -478,7 +479,7 @@ p {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    
+
 }
 
 #back-to-top img:hover {
@@ -625,7 +626,7 @@ form h5 {
     }
 }
 
-/*Media Querys*/
+/*Media Querys Para Responsividade em Dispositivos Mobile*/
 
 @media only screen and (max-width: 1200px) {
     .max-width-skill {
@@ -665,7 +666,7 @@ form h5 {
     .topbar-nav .logo-nav a {
         content: '';
         color: transparent;
-        
+
     }
 
     .topbar-nav .menu li a {
@@ -690,14 +691,23 @@ form h5 {
         overflow: hidden;
     }
 
-    .aboutme-texts{
+    .aboutme-texts {
         display: flex;
         flex-direction: column;
         margin: 20px;
         align-items: center;
         text-align: justify;
+
+    }
+    .topbar-nav {
+        z-index: 3;
+        background-color: #000000;
+        position: relative;
+        width: 100%;
+        padding: 20px;
     
     }
+    
 
 
 
